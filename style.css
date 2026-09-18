@@ -8,7 +8,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Устанавливаем hero-slide-4.jpg как постоянный фиксированный фон всего сайта */
+/* Яркая и четкая фоновая фотография магазина на весь сайт */
 body {
     background: #0b0b0e url('images/hero-slide-4.jpg') no-repeat center top / cover fixed;
     color: #ffffff;
@@ -92,9 +92,10 @@ body {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background: transparent; /* Полностью прозрачная секция для показа фона body */
+    background: transparent;
 }
 
+/* Убрали темную заливку, теперь фон с людьми виден на 100% чётко */
 .slider-backgrounds {
     position: absolute;
     top: 0;
@@ -102,7 +103,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: rgba(11, 11, 14, 0.4); /* Легкое затемнение для читаемости текста */
+    background: transparent;
 }
 
 .slide {
@@ -116,9 +117,10 @@ body {
 }
 
 .slide.active {
-    opacity: 0.8; /* Сохраняет просвечивание фонового изображения */
+    opacity: 0; /* Когда слайды с вёдрами неактивны, они полностью исчезают, открывая чистую фотку магазина */
 }
 
+/* Фоновые слайды с вёдрами (поверх общей фотографии) */
 .hero-slide-1 { background-image: url('images/hero-slide-1.jpg'); }
 .hero-slide-2 { background-image: url('images/hero-slide-2.jpg'); }
 .hero-slide-3 { background-image: url('images/hero-slide-3.jpg'); }
@@ -128,12 +130,14 @@ body {
     z-index: 2;
     max-width: 850px;
     padding-top: 60px;
+    /* Легкая тень под текстом, чтобы он идеально читался на любой фотографии */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
 }
 
 .hero-badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(255, 215, 0, 0.15);
+    background: rgba(11, 11, 14, 0.7);
     border: 1px solid #FFD700;
     color: #FFD700;
     font-size: 13px;
@@ -151,7 +155,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 20px;
     line-height: 1.05;
-    text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    text-shadow: 0 10px 30px rgba(0,0,0,0.9);
 }
 
 .hero-title .highlight {
@@ -164,7 +168,7 @@ body {
     margin-bottom: 35px;
     color: #E2E8F0;
     font-weight: 400;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    text-shadow: 0 4px 15px rgba(0,0,0,0.9);
 }
 
 .hero-btns {
@@ -173,32 +177,7 @@ body {
     gap: 20px;
 }
 
-.slider-dots {
-    position: absolute;
-    bottom: 35px;
-    z-index: 3;
-    display: flex;
-    gap: 12px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    background: rgba(255,255,255,0.3);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active {
-    background: #FFD700;
-    width: 36px;
-    border-radius: 6px;
-}
-
-/* ==========================================================================
-   Buttons
-   ========================================================================== */
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 15px 32px;
@@ -236,9 +215,9 @@ body {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(11, 11, 14, 0.6);
     color: #FFFFFF;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(5px);
 }
 
@@ -279,12 +258,34 @@ body {
     white-space: nowrap;
 }
 
-/* ==========================================================================
-   Brands Section
-   ========================================================================== */
+/* Dots */
+.slider-dots {
+    position: absolute;
+    bottom: 35px;
+    z-index: 3;
+    display: flex;
+    gap: 12px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #FFD700;
+    width: 36px;
+    border-radius: 6px;
+}
+
+/* Brands Section */
 .brands-section {
     padding: 120px 0;
-    background: rgba(18, 18, 22, 0.95); /* Полупрозрачная подложка блоков */
+    background: rgba(18, 18, 22, 0.92);
 }
 
 .section-header {
@@ -433,9 +434,7 @@ body {
     text-transform: uppercase;
 }
 
-/* ==========================================================================
-   Gallery Section
-   ========================================================================== */
+/* Gallery Section */
 .gallery-section {
     padding: 100px 0;
     background: rgba(11, 11, 14, 0.95);
@@ -467,9 +466,7 @@ body {
     display: block;
 }
 
-/* ==========================================================================
-   B2B Section
-   ========================================================================== */
+/* B2B Section */
 .b2b-section {
     padding: 60px 0;
     background: rgba(18, 18, 22, 0.95);
@@ -497,9 +494,7 @@ body {
     font-size: 16px;
 }
 
-/* ==========================================================================
-   Contacts Section
-   ========================================================================== */
+/* Contacts Section */
 .contacts-section {
     padding: 100px 0;
     background: rgba(11, 11, 14, 0.95);
@@ -555,9 +550,7 @@ body {
     color: #FFFFFF;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+/* Footer */
 .footer {
     padding: 30px 0;
     background: #050508;
@@ -582,9 +575,7 @@ body {
     color: #FFF;
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
+/* Responsive */
 @media (max-width: 992px) {
     .brands-grid, 
     .contacts-grid, 
