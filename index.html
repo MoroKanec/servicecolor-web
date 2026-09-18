@@ -10,12 +10,12 @@
     <meta name="keywords" content="MIXOL, Arichemie, пігменти, колоранти, пігментні пасти, концентровані пігменти, колорування фарб, колірування фарб, колірування епоксидних фарб, эпоксидная смола, эпоксидная краска, колірування эпоксидной краски, фарбник для лаків, барвник для лаків, німецькі пігменти купити, ServiceColor, СервісКолор, колоранти купити, пігменти купити, купить колоранты, купить колорант, купить пигмент, купить барвник, купити барвник, купити пігмент, купити колорант, тонувальні пасти, німецькі пігменти, колоранти для фарб, барвник для бетону, тонер для лаку, колорування емалі, пігментні пасти оптом, колеровка фарби Київ, пігменти купити Україна, барвник для смоли">
     <meta name="robots" content="index, follow">
 
-    <!-- Favicon / Іконка сайту для браузера та Google Search -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
 
-    <!-- Open Graph (прев'ю для Telegram/Viber/FB) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="ServiceColor — Німецькі пігменти та колоранти MIXOL / Arichemie">
     <meta property="og:description" content="Офіційний імпортер німецьких пігментних паст та колорантів в Україні. Купити MIXOL та Arichemie.">
     <meta property="og:type" content="website">
@@ -47,13 +47,16 @@
         </div>
     </header>
 
-    <!-- Hero Slider (4 фото: hero-slide-1 ... hero-slide-4) -->
+    <!-- Hero Section (Главный слайдер) -->
     <section class="hero">
+        <!-- Постоянный задний фон (Hero Slide 4) на всю секцию -->
+        <div class="hero-static-bg"></div>
+
+        <!-- Переключающиеся слайды (Краска, вёдра) поверх фона -->
         <div class="slider-backgrounds">
             <div class="slide active hero-slide-1"></div>
             <div class="slide hero-slide-2"></div>
             <div class="slide hero-slide-3"></div>
-            <div class="slide hero-slide-4"></div>
         </div>
         
         <div class="container hero-content">
@@ -70,7 +73,6 @@
             <span class="dot active"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-            <span class="dot"></span>
         </div>
     </section>
 
@@ -83,10 +85,11 @@
             </div>
             
             <div class="brands-grid">
-                <!-- MIXOL Card -->
+                <!-- MIXOL Card с автослайдером фотографий -->
                 <div class="brand-card">
-                    <div class="brand-img-wrap">
-                        <img src="images/mixol-consumer.jpg" alt="MIXOL для споживачів" loading="lazy">
+                    <div class="brand-img-wrap card-slider">
+                        <img src="images/mixol-20ml.jpg" alt="MIXOL 20 мл" class="card-slide active" loading="lazy">
+                        <img src="images/mixol-consumer.jpg" alt="MIXOL нанесение" class="card-slide" loading="lazy">
                     </div>
                     <div class="brand-badge">Роздріб & Майстри</div>
                     <div class="brand-header">
@@ -148,7 +151,7 @@
         </div>
     </section>
 
-    <!-- Gallery Section (6 фото: gallery-1 ... gallery-6) -->
+    <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
         <div class="container">
             <div class="section-header">
@@ -157,12 +160,12 @@
             </div>
             
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="images/gallery-1.jpg" alt="Застосування пігментів ServiceColor 1" loading="lazy"></div>
-                <div class="gallery-item"><img src="images/gallery-2.jpg" alt="Застосування пігментів ServiceColor 2" loading="lazy"></div>
-                <div class="gallery-item"><img src="images/gallery-3.jpg" alt="Застосування пігментів ServiceColor 3" loading="lazy"></div>
-                <div class="gallery-item"><img src="images/gallery-4.jpg" alt="Застосування пігментів ServiceColor 4" loading="lazy"></div>
-                <div class="gallery-item"><img src="images/gallery-5.jpg" alt="Застосування пігментів ServiceColor 5" loading="lazy"></div>
-                <div class="gallery-item"><img src="images/gallery-6.jpg" alt="Застосування пігментів ServiceColor 6" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery-1.jpg" alt="Галерея 1" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery-2.jpg" alt="Галерея 2" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery-3.jpg" alt="Галерея 3" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery-4.jpg" alt="Галерея 4" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery-5.jpg" alt="Галерея 5" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/gallery-6.jpg" alt="Галерея 6" loading="lazy"></div>
             </div>
         </div>
     </section>
