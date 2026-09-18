@@ -8,7 +8,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Фоновая фотография магазина закреплена на весь сайд со скроллом */
+/* Фоновая фотография магазина намертво зафиксирована на заднем плане всего сайта */
 body {
     background-color: #0b0b0e;
     background-image: url('images/hero-slide-4.jpg');
@@ -34,7 +34,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(11, 11, 14, 0.92);
+    background: rgba(11, 11, 14, 0.95);
     backdrop-filter: blur(12px);
     z-index: 1000;
     padding: 16px 0;
@@ -120,12 +120,12 @@ body {
     transition: opacity 1.2s ease-in-out;
 }
 
-/* Слайды с вёдрами снова полностью видимые при активации */
+/* Слайды 1, 2, 3 полностью непрозрачные (нормальные) при активации */
 .slide.active {
     opacity: 1; 
 }
 
-/* Слайды 1, 2, 3 поверх общего фона */
+/* Картинки слайдов с вёдрами */
 .hero-slide-1 { background-image: url('images/hero-slide-1.jpg'); }
 .hero-slide-2 { background-image: url('images/hero-slide-2.jpg'); }
 .hero-slide-3 { background-image: url('images/hero-slide-3.jpg'); }
@@ -287,11 +287,13 @@ body {
 }
 
 /* ==========================================================================
-   Content Sections (делаем их полупрозрачными, чтобы фон просвечивал везде)
+   Content Sections (Нижележащие секции с непрозрачным фоном)
    ========================================================================== */
 .brands-section {
     padding: 120px 0;
-    background: rgba(18, 18, 22, 0.88); /* Просвечивает фон магазина */
+    background: #121216; /* Плотный непрозрачный фон */
+    position: relative;
+    z-index: 2;
 }
 
 .section-header {
@@ -318,7 +320,7 @@ body {
 }
 
 .brand-card {
-    background: rgba(26, 26, 34, 0.95);
+    background: #1a1a22;
     padding: 35px;
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.08);
@@ -443,7 +445,9 @@ body {
 /* Gallery Section */
 .gallery-section {
     padding: 100px 0;
-    background: rgba(11, 11, 14, 0.88);
+    background: #0b0b0e;
+    position: relative;
+    z-index: 2;
 }
 
 .gallery-grid {
@@ -475,11 +479,13 @@ body {
 /* B2B Section */
 .b2b-section {
     padding: 60px 0;
-    background: rgba(18, 18, 22, 0.88);
+    background: #121216;
+    position: relative;
+    z-index: 2;
 }
 
 .b2b-box {
-    background: linear-gradient(135deg, rgba(31, 27, 46, 0.95) 0%, rgba(18, 18, 22, 0.95) 100%);
+    background: linear-gradient(135deg, #1f1b2e 0%, #121216 100%);
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 20px;
     padding: 50px;
@@ -490,6 +496,7 @@ body {
 }
 
 .b2b-text h2 {
+     жестко цвет;
     font-size: 28px;
     color: #FFD700;
     margin-bottom: 10px;
@@ -503,18 +510,20 @@ body {
 /* Contacts Section */
 .contacts-section {
     padding: 100px 0;
-    background: rgba(11, 11, 14, 0.88);
+    background: #0b0b0e;
+    position: relative;
+    z-index: 2;
 }
 
 .contacts-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
-    display: grid;
 }
 
 .contact-card {
-    background: rgba(22, 22, 28, 0.95);
+    background: #16161c;
     padding: 40px 30px;
     border-radius: 14px;
     text-align: center;
@@ -561,6 +570,8 @@ body {
     padding: 30px 0;
     background: #050508;
     border-top: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+    z-index: 2;
 }
 
 .footer-content {
