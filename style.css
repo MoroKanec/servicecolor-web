@@ -8,9 +8,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Настоящий, чёткий и яркий фоновый файл магазина на весь сайт */
+/* Фоновая фотография магазина закреплена на весь сайд со скроллом */
 body {
-    background: #0b0b0e url('images/hero-slide-4.jpg') no-repeat center top / cover fixed;
+    background-color: #0b0b0e;
+    background-image: url('images/hero-slide-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -81,7 +86,7 @@ body {
 }
 
 /* ==========================================================================
-   Hero Section
+   Hero Section & Slides (1, 2, 3 с вёдрами)
    ========================================================================== */
 .hero {
     position: relative;
@@ -102,7 +107,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    /* Убираем черную заливку вообще, чтобы виден был чистый фон body */
     background: transparent;
 }
 
@@ -116,12 +120,12 @@ body {
     transition: opacity 1.2s ease-in-out;
 }
 
-/* Делаем слайды с вёдрами полупрозрачными (0.35), чтобы сквозь них сочно просвечивал магазин */
+/* Слайды с вёдрами снова полностью видимые при активации */
 .slide.active {
-    opacity: 0.35; 
+    opacity: 1; 
 }
 
-/* Фоновые слайды с вёдрами */
+/* Слайды 1, 2, 3 поверх общего фона */
 .hero-slide-1 { background-image: url('images/hero-slide-1.jpg'); }
 .hero-slide-2 { background-image: url('images/hero-slide-2.jpg'); }
 .hero-slide-3 { background-image: url('images/hero-slide-3.jpg'); }
@@ -282,10 +286,12 @@ body {
     border-radius: 6px;
 }
 
-/* Brands Section */
+/* ==========================================================================
+   Content Sections (делаем их полупрозрачными, чтобы фон просвечивал везде)
+   ========================================================================== */
 .brands-section {
     padding: 120px 0;
-    background: rgba(18, 18, 22, 0.95);
+    background: rgba(18, 18, 22, 0.88); /* Просвечивает фон магазина */
 }
 
 .section-header {
@@ -312,7 +318,7 @@ body {
 }
 
 .brand-card {
-    background: #1a1a22;
+    background: rgba(26, 26, 34, 0.95);
     padding: 35px;
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.08);
@@ -437,7 +443,7 @@ body {
 /* Gallery Section */
 .gallery-section {
     padding: 100px 0;
-    background: rgba(11, 11, 14, 0.95);
+    background: rgba(11, 11, 14, 0.88);
 }
 
 .gallery-grid {
@@ -469,11 +475,11 @@ body {
 /* B2B Section */
 .b2b-section {
     padding: 60px 0;
-    background: rgba(18, 18, 22, 0.95);
+    background: rgba(18, 18, 22, 0.88);
 }
 
 .b2b-box {
-    background: linear-gradient(135deg, #1f1b2e 0%, #121216 100%);
+    background: linear-gradient(135deg, rgba(31, 27, 46, 0.95) 0%, rgba(18, 18, 22, 0.95) 100%);
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 20px;
     padding: 50px;
@@ -497,18 +503,18 @@ body {
 /* Contacts Section */
 .contacts-section {
     padding: 100px 0;
-    background: rgba(11, 11, 14, 0.95);
+    background: rgba(11, 11, 14, 0.88);
 }
 
 .contacts-grid {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
+    display: grid;
 }
 
 .contact-card {
-    background: #16161c;
+    background: rgba(22, 22, 28, 0.95);
     padding: 40px 30px;
     border-radius: 14px;
     text-align: center;
