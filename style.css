@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Фотография магазина намертво зафиксирована как задний фон всего сайта */
+/* Яркая и четкая фотография магазина намертво зафиксирована как задний фон всего сайта */
 body {
     background-color: #0b0b0e;
     background-image: url('images/hero-slide-4.jpg');
@@ -112,7 +112,7 @@ body {
     transition: opacity 1.2s ease-in-out;
 }
 
-/* Слайды 1, 2, 3 с вёдрами абсолютно непрозрачные и чёткие, перекрывают фон наглухо */
+/* Слайды 1, 2, 3 с вёдрами абсолютно непрозрачные и чёткие вверху */
 .slide.active {
     opacity: 1 !important; 
 }
@@ -277,10 +277,12 @@ body {
     border-radius: 6px;
 }
 
-/* Нижние секции (полностью плотные непрозрачные цвета, чтобы фон не казался грязным) */
+/* ==========================================================================
+   Нижние секции с легким градиентом (убираем эффект «чёрного стекла»)
+   ========================================================================== */
 .brands-section {
     padding: 120px 0;
-    background: #121216;
+    background: linear-gradient(to bottom, rgba(18, 18, 22, 0.75), rgba(18, 18, 22, 0.92));
 }
 
 .section-header {
@@ -307,7 +309,7 @@ body {
 }
 
 .brand-card {
-    background: #1a1a22;
+    background: rgba(26, 26, 34, 0.9);
     padding: 35px;
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.08);
@@ -432,7 +434,7 @@ body {
 /* Gallery Section */
 .gallery-section {
     padding: 100px 0;
-    background: #0b0b0e;
+    background: linear-gradient(to bottom, rgba(11, 11, 14, 0.85), rgba(11, 11, 14, 0.95));
 }
 
 .gallery-grid {
@@ -464,11 +466,11 @@ body {
 /* B2B Section */
 .b2b-section {
     padding: 60px 0;
-    background: #121216;
+    background: linear-gradient(to bottom, rgba(18, 18, 22, 0.85), rgba(18, 18, 22, 0.95));
 }
 
 .b2b-box {
-    background: linear-gradient(135deg, #1f1b2e 0%, #121216 100%);
+    background: linear-gradient(135deg, rgba(31, 27, 46, 0.9) 0%, rgba(18, 18, 22, 0.9) 100%);
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 20px;
     padding: 50px;
@@ -492,7 +494,7 @@ body {
 /* Contacts Section */
 .contacts-section {
     padding: 100px 0;
-    background: #0b0b0e;
+    background: linear-gradient(to bottom, rgba(11, 11, 14, 0.85), rgba(11, 11, 14, 0.95));
 }
 
 .contacts-grid {
@@ -503,7 +505,7 @@ body {
 }
 
 .contact-card {
-    background: #16161c;
+    background: rgba(22, 22, 28, 0.9);
     padding: 40px 30px;
     border-radius: 14px;
     text-align: center;
@@ -548,7 +550,7 @@ body {
 /* Footer */
 .footer {
     padding: 30px 0;
-    background: #050508;
+    background: rgba(5, 5, 8, 0.95);
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
