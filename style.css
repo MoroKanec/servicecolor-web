@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Яркая и четкая фотография магазина намертво зафиксирована как задний фон всего сайта */
+/* Наша сочная фотография магазина намертво зафиксирована как фон всего сайта */
 body {
     background-color: #0b0b0e;
     background-image: url('images/hero-slide-4.jpg');
@@ -29,8 +29,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(11, 11, 14, 0.95);
-    backdrop-filter: blur(12px);
+    background: #0b0b0e;
     z-index: 1000;
     padding: 16px 0;
     border-bottom: 1px solid rgba(255, 215, 0, 0.15);
@@ -112,7 +111,7 @@ body {
     transition: opacity 1.2s ease-in-out;
 }
 
-/* Слайды 1, 2, 3 с вёдрами абсолютно непрозрачные и чёткие вверху */
+/* Слайды 1, 2, 3 с вёдрами полностью непрозрачные, чёткие, без просветов */
 .slide.active {
     opacity: 1 !important; 
 }
@@ -132,7 +131,7 @@ body {
 .hero-badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     border: 1px solid #FFD700;
     color: #FFD700;
     font-size: 13px;
@@ -278,11 +277,11 @@ body {
 }
 
 /* ==========================================================================
-   Нижние секции с легким градиентом (убираем эффект «чёрного стекла»)
+   Нижние секции — убираем всю полупрозрачность, делаем их чистыми непрозрачными блоками
    ========================================================================== */
 .brands-section {
     padding: 120px 0;
-    background: linear-gradient(to bottom, rgba(18, 18, 22, 0.75), rgba(18, 18, 22, 0.92));
+    background: #121216;
 }
 
 .section-header {
@@ -309,7 +308,7 @@ body {
 }
 
 .brand-card {
-    background: rgba(26, 26, 34, 0.9);
+    background: #1a1a22;
     padding: 35px;
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.08);
@@ -434,7 +433,7 @@ body {
 /* Gallery Section */
 .gallery-section {
     padding: 100px 0;
-    background: linear-gradient(to bottom, rgba(11, 11, 14, 0.85), rgba(11, 11, 14, 0.95));
+    background: #0b0b0e;
 }
 
 .gallery-grid {
@@ -466,11 +465,11 @@ body {
 /* B2B Section */
 .b2b-section {
     padding: 60px 0;
-    background: linear-gradient(to bottom, rgba(18, 18, 22, 0.85), rgba(18, 18, 22, 0.95));
+    background: #121216;
 }
 
 .b2b-box {
-    background: linear-gradient(135deg, rgba(31, 27, 46, 0.9) 0%, rgba(18, 18, 22, 0.9) 100%);
+    background: linear-gradient(135deg, #1f1b2e 0%, #121216 100%);
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 20px;
     padding: 50px;
@@ -494,7 +493,7 @@ body {
 /* Contacts Section */
 .contacts-section {
     padding: 100px 0;
-    background: linear-gradient(to bottom, rgba(11, 11, 14, 0.85), rgba(11, 11, 14, 0.95));
+    background: #0b0b0e;
 }
 
 .contacts-grid {
@@ -505,7 +504,7 @@ body {
 }
 
 .contact-card {
-    background: rgba(22, 22, 28, 0.9);
+    background: #16161c;
     padding: 40px 30px;
     border-radius: 14px;
     text-align: center;
@@ -550,7 +549,7 @@ body {
 /* Footer */
 .footer {
     padding: 30px 0;
-    background: rgba(5, 5, 8, 0.95);
+    background: #050508;
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
